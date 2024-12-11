@@ -8,6 +8,8 @@ import react from '@astrojs/react';
 export default defineConfig({
   // Or 'hybrid' if you also want to pre-render static routes
   output: 'server',
-
+  server: {
+    port: 1234 // Cambia esto al puerto deseado
+  },
   integrations: [tailwind(), react()]
 });
